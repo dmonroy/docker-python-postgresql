@@ -4,4 +4,4 @@ RUN wget -O - http://apt.postgresql.org/pub/repos/apt/ACCC4CF8.asc | apt-key add
   && apt-get update \
   && apt-get install postgresql-9.5 -y
 
-
+ADD pg_hba.conf /etc/postgresql/9.5/main/pg_hba.conf
