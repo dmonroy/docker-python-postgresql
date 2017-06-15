@@ -1,4 +1,4 @@
-FROM python:3.5.2
+FROM python:3.6.1
 RUN wget -O - http://apt.postgresql.org/pub/repos/apt/ACCC4CF8.asc | apt-key add - \
   && echo 'deb http://apt.postgresql.org/pub/repos/apt/ jessie-pgdg main' > /etc/apt/sources.list.d/pgdg.list \
   && apt-get update \
